@@ -15,7 +15,7 @@ let songNames=[];
 //getting a folder where songs are present
 getSongsFolder =async(folder)=>{
     currFolder=folder;
-    let data = await fetch(`https://Tharun2518.github.io/similar-to-spotify/songs/${folder}/song.html`);
+    let data = await fetch(`https://tharun2518.github.io/similar-to-spotify/songs/${folder}/song.html`);
     let response = await data.text();
     let songs_cont =document.createElement("div");
     songs_cont.innerHTML=response;
