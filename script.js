@@ -55,7 +55,7 @@ function insertString(originalString, stringToInsert, index) {
 }
 //defining play song function
 const playSong = (link,Name)=>{
-    playedAudio.src=insertString(link,`songs/${currFolder}/`,22);
+    playedAudio.src=insertString(link,`songs/${currFolder}/`,48);
     playedAudio.play();
     play.src="Images/play.svg";
     document.querySelector('.info').innerHTML=Name;
